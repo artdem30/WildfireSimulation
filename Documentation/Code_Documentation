@@ -1,0 +1,26 @@
+Documentation for Simulation
+
+Specific function documentation can be found in the comments in each file. This is an outline of how different
+files and classes interact.
+
+Edge Class:
+An Edge object is a representation of a probability vector from node object to another. It sets its probability value
+based on inputted parameters and the state of the two nodes is connects to.
+
+Node Class:
+The Node object represents an fire prone object like a house or tree. Node objects have a list of edge objects that are
+generated specifically for that Node. A node has fire states, property value, coordinate, and other characteristics.
+
+Neighborhood Class:
+The Neighborhood class sets edges and nodes to form a neighborhood based on the specified parameters and node
+coordinates. It also simulates fire spread and handles data.
+
+Simulation Class:
+Simulation simply runs the fire spread in a Neighborhood object, a specified amount of trials. Then combines data to
+generate statistics.
+
+FileWrite:
+Contains functions to write statistics to csv files as well as producing heatmaps.
+
+main:
+Combines all classes and files to run a certain type fo simulation style.
